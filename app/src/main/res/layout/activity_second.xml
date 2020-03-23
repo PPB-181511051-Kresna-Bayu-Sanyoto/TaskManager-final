@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.taskmanager.SecondActivity"
+    android:background="@color/greenish">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="149dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="118dp"
+        android:text="New Task"
+        android:textSize="25dp"
+        android:textColor="@color/whiteish"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:backgroundTint="@color/whiteish"
+        android:textColor="@color/whiteish"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="55dp"
+        android:text="Task Name"
+        android:textColor="@color/whiteish"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="32dp"
+        android:text="DeadLine"
+        android:textColor="@color/whiteish" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="78dp"
+        android:backgroundTint="@color/whiteish"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/whiteish" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="42dp"
+        android:text="Description"
+        android:textColor="@color/whiteish" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="22dp"
+        android:onClick="onClick"
+        android:text="Add Task"
+        android:backgroundTint="@color/blueish"
+        android:textColor="@color/whiteish"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        android:text="Set Deadline" />
+
+</RelativeLayout>

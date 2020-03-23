@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.taskmanager.MainActivity"
+    android:background="@color/greenish">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@color/cardview_dark_background" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="onClick"
+        android:text="+"
+        android:backgroundTint="@color/blueish"
+        android:textColor="@color/whiteish"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasks"
+        android:layout_width="match_parent"
+        android:layout_height="666dp"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toStartOf="@+id/button"
+        android:text="Task Manager"
+        android:textSize="20dp"
+        android:textColor="@color/whiteish"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="3dp"
+        android:layout_toStartOf="@+id/button"
+        android:text="Add Task" />
+
+</RelativeLayout>
